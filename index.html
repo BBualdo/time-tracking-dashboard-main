@@ -49,8 +49,9 @@
     main {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 32vh repeat(6, minmax(0, 1fr));
+      grid-template-rows: 32vh 1fr;
       padding: 40px 20px;
+      row-gap: 24px;
     }
 
     .profile-container {
@@ -106,7 +107,14 @@
     }
 
     .right-side {
-      background-color: var(--blue);
+      display: grid;
+      grid-template-rows: repeat (6, minmax(0, 1fr));
+      row-gap: 24px;
+    }
+
+    .container {
+      background-color: var(--darkBlue);
+      color: white;
     }
 
 
