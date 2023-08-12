@@ -1,27 +1,15 @@
-fetch('scripts/data.json')
-  .then(res => res.json())
-  .then(data => {
-    const placeholder = document.querySelector('.right-side');
+const periodSelectors = document.querySelectorAll('.period');
+// adds toggle to each clicked button
+periodSelectors.forEach(button => {
+  button.addEventListener('click', () => {
+    // first removes toggle from other buttons
+    toggleOff()
+    button.classList.add('is-toggled');
+  })
+})
 
-    data.forEach(activity => {
-      placeholder.innerHTML += `
-      <div class="container">
-        <div class="color-header play"></div>
-        <div class="time-info">
-          <div class="time-header">
-            <div class="activity-name">
-            ${activity.title}
-            </div>
-            <img class="options-button" src="images/icon-ellipsis.svg" alt="">
-          </div>
-          <div class="time-amount">
-          ${activity.timeframes.weekly.current}hrs
-          </div>
-          <div class="time-before">
-          Last week - ${activity.timeframes.weekly.previous}hrs
-          </div>
-        </div>
-      </div>
-      `
-    });
-  });
+function toggleOff() {
+  periodSelectors.forEach(button => {
+    button.classList.remove('is-toggled');
+  })
+}

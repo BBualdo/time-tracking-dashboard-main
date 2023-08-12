@@ -38,7 +38,81 @@
     * {
       box-sizing: border-box;
       font-family: 'Rubik', sans-serif;
+      font-size: 18px;
       margin: 0;
+    }
+
+    body {
+      background-color: var(--veryDarkBlue);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 32vh repeat(6, minmax(0, 1fr));
+      padding: 40px 20px;
+    }
+
+    .profile-container {
+      align-items: center;
+      background-color: var(--blue);
+      border-radius: 16px;
+      display: flex;
+      height: 64%;
+      line-height: 28px;
+      position: relative;
+      bottom: -12px;
+    }
+
+    .profile-container span {
+      color: var(--paleBlue);
+      font-size: 16px;
+    }
+
+    .profile-container p {
+      color: rgb(218, 218, 218);
+      font-size: 24px;
+      font-weight: 300;
+      margin-left: 20px;
+    }
+
+    .profile-image img {
+      border: 2px solid white;
+      border-radius: 50%;
+      margin-top: 12px;
+      margin-left: 28px;
+      max-width: 68px;
+    }
+
+    .period-selector {
+      align-items: center;
+      background-color: var(--darkBlue);
+      border-radius: 0 0 16px 16px;
+      color: var(--desaturatedBlue);
+      display: flex;
+      justify-content: space-between;
+      height: 36%;
+      padding: 0 32px;
+    }
+
+    .period {
+      cursor: pointer;
+      margin-top: 12px;
+      transition: color 0.2s;
+    }
+
+    .period:hover {
+      color: white;
+    }
+
+    .right-side {
+      background-color: var(--blue);
+    }
+
+
+
+    .is-toggled {
+      color: white;
     }
   </style>
 </head>
@@ -46,7 +120,9 @@
   <main>
     <section class="left-side">
       <div class="profile-container">
-        <div class="profile-image"></div>
+        <div class="profile-image">
+          <img src="images/image-jeremy.png" alt="Profile-image">
+        </div>
         <p><span>Report for</span><br>
         Jeremy Robson
         </p>
@@ -61,6 +137,7 @@
     </section>
   </main>
 
+<script src="scripts/dom_data.js"></script>
 <script src="scripts/app.js"></script>
 </body>
 </html>
