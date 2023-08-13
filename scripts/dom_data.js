@@ -26,9 +26,7 @@ const getData = () => { fetch('scripts/data.json')
             </div>
           </div>
         </div>
-      </div>
-        
-        `
+      </div>`
         } else if (periodSelectors[1].classList.contains('is-toggled')) {
           placeholder.innerHTML += `
         <div class="${activity.color}">
@@ -50,8 +48,7 @@ const getData = () => { fetch('scripts/data.json')
               </div>
             </div>
           </div>
-        </div>
-        `
+        </div>`
         } else if (periodSelectors[2].classList.contains('is-toggled')) {
           placeholder.innerHTML += `
           <div class="${activity.color}">
@@ -73,8 +70,7 @@ const getData = () => { fetch('scripts/data.json')
                 </div>
               </div>
             </div>
-          </div>
-          `
+          </div>`
         } else {
           placeholder.innerHTML += `
             <div class="${activity.color}">
@@ -95,9 +91,8 @@ const getData = () => { fetch('scripts/data.json')
                 </div>
               </div>
             </div>
-            </div>
-          `
+            </div>`
         };
       });
     });
-  }
+  };

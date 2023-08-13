@@ -9,7 +9,6 @@ periodSelectors.forEach(button => {
     getData()
     // first removes toggle from other buttons
     toggleOff()
-    
     button.classList.add('is-toggled');
   })
 })
