@@ -1,5 +1,6 @@
 [
   {
+    "color": "orange",
     "title": "Work",
     "timeframes": {
       "daily": {
@@ -17,6 +18,7 @@
     }
   },
   {
+    "color": "blue",
     "title": "Play",
     "timeframes": {
       "daily": {
@@ -34,6 +36,7 @@
     }
   },
   {
+    "color": "red",
     "title": "Study",
     "timeframes": {
       "daily": {
@@ -51,6 +54,7 @@
     }
   },
   {
+    "color": "green",
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -68,6 +72,7 @@
     }
   },
   {
+    "color": "purple",
     "title": "Social",
     "timeframes": {
       "daily": {
@@ -85,6 +90,7 @@
     }
   },
   {
+    "color": "yellow",
     "title": "Self Care",
     "timeframes": {
       "daily": {
