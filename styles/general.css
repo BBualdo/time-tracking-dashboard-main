@@ -33,15 +33,7 @@ body {
 
 
 
-.orange,
-    .blue,
-    .red,
-    .green,
-    .purple,
-    .yellow {
-      border-radius: 20px;
-      height: 100%;
-    }
+
 
     .orange {
       background-color: var(--bightRed);

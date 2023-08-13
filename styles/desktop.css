@@ -1,52 +1,56 @@
-@media (min-width: 601px) {
+@media (min-width: 1145px) {
   main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 32vh 1fr;
-    padding: 40px 20px;
-    row-gap: 24px;
+    column-gap: 24px;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100vh;
+    padding: 0 180px;
+    place-content: center;
   }
-  
+
+  .left-side {
+    margin-top: -12px;
+  }
+
   .profile-container {
-    align-items: center;
     background-color: var(--blue);
     border-radius: 16px;
     display: flex;
-    height: 64%;
-    line-height: 28px;
+    flex-direction: column;
+    height: 68%;
+    padding: 24px 32px;
     position: relative;
-    bottom: -12px;
+    bottom: -3%;
   }
   
   .profile-container span {
     color: var(--paleBlue);
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .profile-container p {
     color: rgb(218, 218, 218);
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 300;
-    margin-left: 20px;
+    line-height: 44px;
   }
   
   .profile-image img {
     border: 2px solid white;
     border-radius: 50%;
     margin-top: 12px;
-    margin-left: 28px;
-    max-width: 68px;
+    max-width: 80px;
   }
   
   .period-selector {
-    align-items: center;
     background-color: var(--darkBlue);
     border-radius: 0 0 16px 16px;
     color: var(--desaturatedBlue);
     display: flex;
-    justify-content: space-between;
-    height: 36%;
-    padding: 0 32px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 32%;
+    padding: 12px 32px;
   }
   
   .period {
@@ -61,11 +65,21 @@
   
   .right-side {
     display: grid;
-    grid-template-rows: repeat (6, minmax(0, 1fr));
+    column-gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat (2, minmax(0, 1fr));
     row-gap: 24px;
   }
-  
-  
+
+  .orange,
+  .blue,
+  .red,
+  .green,
+  .purple,
+  .yellow {
+    border-radius: 20px;
+    height: 100%;
+  }
   
   .container {
     background-color: var(--darkBlue);
@@ -101,20 +115,20 @@
   }
   
   .time {
-    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-top: 8px;
+    margin-top: 20px;
   }
   
   .time-amount {
-    font-size: 30px;
+    font-size: clamp(1rem, 4.25vw, 4rem);
     font-weight: 300;
   }
   
   .time-before {
     color: var(--paleBlue);
-    font-size: 15px;
+    font-size: clamp(12px, 1.15vw, 1rem);
     font-weight: 300;
   }
 }

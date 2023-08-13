@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 1144px) {
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -64,9 +64,17 @@
     grid-template-rows: repeat (6, minmax(0, 1fr));
     row-gap: 24px;
   }
-  
-  
-  
+
+  .orange,
+  .blue,
+  .red,
+  .green,
+  .purple,
+  .yellow {
+    border-radius: 20px;
+    height: 100%;
+  }
+
   .container {
     background-color: var(--darkBlue);
     border-radius: 16px;
