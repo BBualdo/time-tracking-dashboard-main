@@ -31,54 +31,121 @@ body {
   background-color: var(--veryDarkBlue);
 }
 
+.profile-container {
+  background-color: var(--blue);
+  border-radius: 16px;
+  display: flex;
+  position: relative;
+}
 
+.profile-container span {
+  color: var(--paleBlue);
+  font-size: 16px;
+}
 
+.period-selector {
+  background-color: var(--darkBlue);
+  border-radius: 0 0 16px 16px;
+  color: var(--desaturatedBlue);
+  display: flex;
+}
 
+.period {
+  cursor: pointer;
+  margin-top: 12px;
+  transition: color 0.2s;
+}
 
-    .orange {
-      background-color: var(--bightRed);
-      background-image: url(../images/icon-work.svg);
-      background-position: top -12px right 16px;
-      background-repeat: no-repeat;
+.period:hover {
+  color: white;
+}
 
-    }
+.orange,
+.blue,
+.red,
+.green,
+.purple,
+.yellow {
+  border-radius: 20px;
+  height: 100%;
+}
 
-    .blue {
-      background-color: var(--softBlue);
-      background-image: url(../images/icon-play.svg);
-      background-position: top -4px right 16px;
-      background-repeat: no-repeat;
-    }
+.orange {
+  background-color: var(--bightRed);
+  background-image: url(../images/icon-work.svg);
+  background-position: top -12px right 16px;
+  background-repeat: no-repeat;
 
-    .red {
-      background-color: var(--lightRed);
-      background-image: url(../images/icon-study.svg);
-      background-position: top -8px right 16px;
-      background-repeat: no-repeat;
-    }
+}
 
-    .green {
-      background-color: var(--limeGreen);
-      background-image: url(../images/icon-exercise.svg);
-      background-position: top 0 right 16px;
-      background-repeat: no-repeat;
-    }
+.blue {
+  background-color: var(--softBlue);
+  background-image: url(../images/icon-play.svg);
+  background-position: top -4px right 16px;
+  background-repeat: no-repeat;
+}
 
-    .purple {
-      background-color: var(--violet);
-      background-image: url(../images/icon-social.svg);
-      background-position: top -12px right 16px;
-      background-repeat: no-repeat;
-    }
+.red {
+  background-color: var(--lightRed);
+  background-image: url(../images/icon-study.svg);
+  background-position: top -8px right 16px;
+  background-repeat: no-repeat;
+}
 
-    .yellow {
-      background-color: var(--softOrange);
-      background-image: url(../images/icon-self-care.svg);
-      background-position: top -12px right 16px;
-      background-repeat: no-repeat;
-    }
+.green {
+  background-color: var(--limeGreen);
+  background-image: url(../images/icon-exercise.svg);
+  background-position: top 0 right 16px;
+  background-repeat: no-repeat;
+}
 
+.purple {
+  background-color: var(--violet);
+  background-image: url(../images/icon-social.svg);
+  background-position: top -12px right 16px;
+  background-repeat: no-repeat;
+}
 
-    .is-toggled {
-      color: white;
-    }
+.yellow {
+  background-color: var(--softOrange);
+  background-image: url(../images/icon-self-care.svg);
+  background-position: top -12px right 16px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: var(--darkBlue);
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 32px 24px;
+  transition: background-color 0.2s;
+}
+
+.container:hover {
+  background-color: hsl(235, 36%, 40%);
+}
+
+.time-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-name {
+  font-weight: 500;
+}
+
+.time-header > img {
+  cursor: pointer;
+  transition: filter 0.1s;
+}
+
+.time-header > img:hover {
+  filter: brightness(1000%);
+}
+
+.is-toggled {
+  color: white;
+}

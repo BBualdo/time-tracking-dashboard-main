@@ -13,19 +13,10 @@
   }
 
   .profile-container {
-    background-color: var(--blue);
-    border-radius: 16px;
-    display: flex;
     flex-direction: column;
     height: 68%;
     padding: 24px 32px;
-    position: relative;
     bottom: -3%;
-  }
-  
-  .profile-container span {
-    color: var(--paleBlue);
-    font-size: 15px;
   }
   
   .profile-container p {
@@ -43,24 +34,10 @@
   }
   
   .period-selector {
-    background-color: var(--darkBlue);
-    border-radius: 0 0 16px 16px;
-    color: var(--desaturatedBlue);
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 32%;
     padding: 12px 32px;
-  }
-  
-  .period {
-    cursor: pointer;
-    margin-top: 12px;
-    transition: color 0.2s;
-  }
-  
-  .period:hover {
-    color: white;
   }
   
   .right-side {
@@ -69,49 +46,6 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat (2, minmax(0, 1fr));
     row-gap: 24px;
-  }
-
-  .orange,
-  .blue,
-  .red,
-  .green,
-  .purple,
-  .yellow {
-    border-radius: 20px;
-    height: 100%;
-  }
-  
-  .container {
-    background-color: var(--darkBlue);
-    border-radius: 16px;
-    color: white;
-    cursor: pointer;
-    margin-top: 40px;
-    padding: 32px 24px;
-    transition: background-color 0.2s;
-  }
-  
-  .container:hover {
-    background-color: hsl(235, 36%, 40%);
-  }
-  
-  .time-header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .activity-name {
-    font-weight: 500;
-  }
-  
-  .time-header > img {
-    cursor: pointer;
-    transition: filter 0.1s;
-  }
-  
-  .time-header > img:hover {
-    filter: brightness(1000%);
   }
   
   .time {
